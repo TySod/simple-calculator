@@ -4,10 +4,9 @@ body {
 .div {
   background-color: grey;
   border-radius: 10px;
-  padding-top: 5%;
-  padding-left: 5%;
-  width: 50vw;
-  display: inline-flexbox;
+  padding: 5%;
+  width: auto;
+  display: inline-block;
   justify-content: space-evenly;
 }
 input {
@@ -17,6 +16,7 @@ input {
   border-color: black;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  text-align: right;
 }
 
 button {
