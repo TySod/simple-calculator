@@ -1,0 +1,49 @@
+body {
+  text-decoration: none;
+}
+.div {
+  background-color: grey;
+  border-radius: 10px;
+  padding-top: 5%;
+  padding-left: 5%;
+  width: 50vw;
+  display: inline-flexbox;
+  justify-content: space-evenly;
+}
+input {
+  border-radius: 10px;
+  font-size: 20px;
+  width: inherit;
+  border-color: black;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+button {
+  color: white;
+  background-color: grey;
+  border-radius: 7px;
+  font-size: 17px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+button.ac {
+  background-color: green;
+}
+button.del {
+  background-color: red;
+}
+button.off {
+  background-color: black;
+  color: grey;
+  font-size: 20px;
+  margin-left: 160px;
+}
+button.on {
+  background-color: black;
+  color: grey;
+  font-size: 20px;
+}
+button.symbol {
+  background-color: black;
+}
