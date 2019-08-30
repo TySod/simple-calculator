@@ -4,7 +4,7 @@ document.querySelector("button#on").addEventListener("click", () => {
   buttons.forEach(button => {
     button.removeAttribute("disabled");
   });
-  console.log("Cgit add .al on");
+  console.log("Cal on");
 });
 
 document.querySelector("button#off").addEventListener("click", () => {
