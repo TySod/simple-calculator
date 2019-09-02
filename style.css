@@ -1,7 +1,7 @@
 body {
   text-decoration: none;
 }
-.div {
+.calculator {
   background-color: grey;
   border-radius: 10px;
   padding: 5%;
@@ -14,8 +14,8 @@ input {
   font-size: 20px;
   width: inherit;
   border-color: black;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 2px;
+  padding-bottom: 5px;
   text-align: right;
 }
 
@@ -24,26 +24,32 @@ button {
   background-color: grey;
   border-radius: 7px;
   font-size: 17px;
-  width: 60px;
-  margin-bottom: 20px;
+  width: 50px;
+  height: 30px;
+  margin-bottom: 2px;
 }
-button.ac {
+button#ac {
   background-color: green;
 }
-button.del {
+button#del {
   background-color: red;
 }
-button.off {
+.operator {
+  font-weight: 600;
+  background-color: #fff;
+  color: blue;
+}
+button#off {
   background-color: black;
   color: grey;
   font-size: 20px;
   margin-left: 160px;
 }
-button.on {
+button#on {
   background-color: black;
   color: grey;
   font-size: 20px;
 }
-button.symbol {
+button.number {
   background-color: black;
 }
