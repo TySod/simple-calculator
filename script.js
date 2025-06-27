@@ -64,3 +64,23 @@ function squareRoot() {
     }
     updateDisplay();
 }
+
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+    if (!isNaN(key)) {
+        appendChar(key);
+    } else if (['+', '-', '*', '/'].includes(key)) {
+        appendChar(key);
+    } else if (key === 'Enter' || key === '=') {
+        event.preventDefault();
+        calculate();
+    } else if (key === 'Backspace') {
+        deleteChar();
+    } else if (key === 'Escape') {
+        clearScreen();
+    } else if (key === '.') {
+        appendDot();
+    } else if (key === '%') {
+        percent();
+    }
+});
