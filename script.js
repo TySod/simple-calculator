@@ -56,14 +56,6 @@ function calculate() {
     justCalculated = true;
 }
 
-function squareRoot() {
-    try {
-        display = Math.sqrt(eval(display)).toString();
-    } catch {
-        display = "Error";
-    }
-    updateDisplay();
-}
 
 document.addEventListener('keydown', function(event) {
     const key = event.key;
