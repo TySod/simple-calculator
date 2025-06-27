@@ -1,0 +1,83 @@
+/* iPhone Calculator Style */
+
+body {
+    background: #181818;
+    font-family: 'SF Pro Display', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    width: 320px;
+    margin: 40px auto;
+    border-radius: 40px;
+    background: #222;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    padding: 24px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.display {
+    background: none;
+    color: #fff;
+    font-size: 2.8rem;
+    text-align: right;
+    padding: 24px 8px 16px 8px;
+    min-height: 56px;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 64px);
+    grid-gap: 12px;
+    justify-content: center;
+}
+
+.button {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: filter 0.1s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.button:active {
+    filter: brightness(1.2);
+}
+
+/* Orange operator buttons */
+.button.operator {
+    background: linear-gradient(180deg, #ffb340 0%, #ff9500 100%);
+    color: #fff;
+}
+
+/* Gray function buttons */
+.button.function {
+    background: linear-gradient(180deg, #d4d4d2 0%, #505050 100%);
+    color: #222;
+}
+
+/* Dark number buttons */
+.button.number {
+    background: linear-gradient(180deg, #333 0%, #181818 100%);
+    color: #fff;
+}
+
+/* Zero button spans two columns */
+.button.equals {
+    grid-column: span 2;
+    width: 140px;
+    border-radius: 32px;
+    text-align: left;
+    padding-left: 28px;
+}

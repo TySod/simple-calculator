@@ -4,26 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Caculator</title>
 </head>
-<body>
-  <div>
-    <buttonb id="xxx">1</button>
-    <buttonb id="xxx">2</button>
-    <buttonb id="xxx">3</button>
-    <buttonb id="xxx">4</button>
-    <buttonb id="xxx">5</button>
-    <buttonb id="xxx">6</button>
-    <buttonb id="xxx">7</button>
-    <buttonb id="xxx">8</button>
-    <buttonb id="xxx">9</button>
-    <buttonb id="xxx">0</button>
-    <buttonb id="xxx">+</button>
-    <buttonb id="xxx">-</button>
-    <buttonb id="xxx">/</button>
-    <buttonb id="xxx">*</button>
-    <buttonb id="xxx">=</button>
+<body >
+  <h1 class="title">Calculator</h1>
+  <p class="description">A simple calculator built with HTML, CSS, and JavaScript.</p>
+  <div class="calculator">    
+      <input type="text" name="screen" class="display">
+      <div class="buttons">
+        <button class="button function clear">C</button>
+        <button class="button function backspace">&larr;</button>
+        <button class="button function percent">%</button>
+        <button class="button operator divide">/</button>
+        <!-- <button class="button function square-root">&#8730;</button> -->
+        <button class="button number seven">7</button>
+        <button class="button number eight">8</button>
+        <button class="button number nine">9</button>
+        <button class="button operator plus ">+</button>
+        <button class="button number four">4</button>
+        <button class="button number five">5</button>
+        <button class="button number six">6</button>
+        <button class="button operator minus">-</button>
+        <button class="button number one">1</button>
+        <button class="button number two">2</button>
+        <button class="button number three">3</button>
+        <button class="button operator multiply">*</button>
+        <button class="button dot">.</button>
+        <button class="button zero">0</button>
+        <button class="button operator equals">=</button>
   </div>
-  
+</div>
+
+  <script src="script.js"></script> 
 </body>
 </html>
