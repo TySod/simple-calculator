@@ -8,30 +8,27 @@
   <title>Caculator</title>
 </head>
 <body >
-  <h1 class="title">Calculator</h1>
-  <p class="description">A simple calculator built with HTML, CSS, and JavaScript.</p>
   <div class="calculator">    
-      <input type="text" name="screen" class="display" id="display" readonly>
+    <input type="text" name="screen" class="display" id="display" readonly>
       <div class="buttons">
         <button class="button function clear" onclick="clearScreen()">C</button>
         <button class="button function backspace" onclick="deleteChar()">&larr;</button>
         <button class="button function percent" onclick="percent()">%</button>
         <button class="button operator divide" onclick="appendChar('/')">/</button>
-        <!-- <button class="button function square-root">&#8730;</button> -->
-        <button class="button number seven" onclick="appendChar('7')">7</button>
-        <button class="button number eight" onclick="appendChar('8')">8</button>
-        <button class="button number nine" onclick="appendChar('9')">9</button>
-        <button class="button operator plus" onclick="appendChar('+')">+</button>
-        <button class="button number four" onclick="appendChar('4')">4</button>
-        <button class="button number five" onclick="appendChar('5')">5</button>
-        <button class="button number six" onclick="appendChar('6')">6</button>
-        <button class="button operator minus" onclick="appendChar('-')">-</button>
-        <button class="button number one" onclick="appendChar('1')">1</button>
-        <button class="button number two" onclick="appendChar('2')">2</button>
-        <button class="button number three"onclick="appendChar('3')">3</button>
-        <button class="button operator multiply" onclick="appendChar('*')">*</button>
-        <button class="button dot" onclick="appendDot()">.</button>
-        <button class="button zero" onclick="appendChar('0')">0</button>
+        <button class="button number" onclick="appendChar('7')">7</button>
+        <button class="button number" onclick="appendChar('8')">8</button>
+        <button class="button number" onclick="appendChar('9')">9</button>
+        <button class="button operator" onclick="appendChar('+')">+</button>
+        <button class="button number" onclick="appendChar('4')">4</button>
+        <button class="button number" onclick="appendChar('5')">5</button>
+        <button class="button number" onclick="appendChar('6')">6</button>
+        <button class="button operator" onclick="appendChar('-')">-</button>
+        <button class="button number" onclick="appendChar('1')">1</button>
+        <button class="button number" onclick="appendChar('2')">2</button>
+        <button class="button number" onclick="appendChar('3')">3</button>
+        <button class="button operator" onclick="appendChar('*')">*</button>
+        <button class="button number" onclick="appendDot()">.</button>
+        <button class="button number" onclick="appendChar('0')">0</button>
         <button class="button operator equals" onclick="calculate()">=</button>
   </div>
 </div>
